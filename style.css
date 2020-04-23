@@ -18,7 +18,7 @@
 
 }
 .title h1{
-  font-size: 60px;
+
   color:#56E39F;
 }
 .subt{
@@ -68,7 +68,7 @@
   align-content: flex-end;
   background: #2A1F2D;
 
-  font-size: 10px;
+
   color: white;
 }
 .footer a{
@@ -81,7 +81,7 @@
   border: 2px solid #56E39F;
   background: white;
   font-family: 'Bebas Neue',cursive;
-  font-size: 20px;
+
 }
 .button:hover{
   border-radius: 6px;
