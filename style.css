@@ -25,24 +25,32 @@
   color: #f6acc8;
 }
 .quoteparent{
-  position: relative;
   display: flex;
-  height: 70vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #2A1F2D;
-   /*2A1F2D;*/
+    height: 69vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2A1F2D;
 }
 .qb{
   background: #56E39F;
+      height: 60vh;
+      width: 100vw;
+      position: relative;
+}
+#human{
+  position: absolute;
+    left: 10%;
+    height: 60vh;
+    width: 77vw;
 }
 #quoter{
   position: absolute;
-  top:60%;
-  left: 41%;
-  width:17vw;
-  height:15vh;
+  top: 62%;
+  left: 32%;
+  width: 32vw;
+  height: 15vh;
   overflow-y: scroll;
 }
 #quoter::-webkit-scrollbar{
