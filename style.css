@@ -6,6 +6,7 @@
 
 .title{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #2A1F2D;
