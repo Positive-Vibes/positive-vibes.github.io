@@ -4,36 +4,46 @@
     <meta charset="utf-8">
     <title>nes fun</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
   <body>
-<div class="container">
-<img src="./assets/doc.png" alt="doc" class="doc">
-<img src="./assets/wash.png" alt="doc" class="wash">
-    <div class="header">
-      <h1>positive Vibes</h1>
+<div class="container-fluid">
 
+    <div class="flex-column justify-content-center title"  >
+    <h1>positive Vibes</h1>
+    <div class="subt">
+
+  <a class="subt">nes friends group initiative - #stayhomestaysafe <br>share a positive vibe wid loved ones in lockdown </a>
+      </div>  </div>
+
+
+
+
+
+      <div class="col justify-content-center quoteparent">
+          <div class="qb">
+            <img src="./assets/load.gif" alt="" height="400px" width="350px" id="human">
+            <p id="quoter">A vibe is loading</p>
+          </div>
+          <div class="buttons ">
+              <button type="button"class="button btn-success-outline" name="button" onclick="randomQuote()">vibe me</button>
+              <button class="button"><a class="btn-success" href="whatsapp://send" data-text="feel good we are with you" data-href="https://overrkill.github.io" class="wa_btn wa_btn_s " >share</a></button>
+          </div>
+      </div>
+
+
+
+
+    <div class="footer">
+      <a > Total hits 99+</a>
+      <a>created by &copy; Abhishek kale</a>
     </div>
-<div class="subt">
-  <a>nes friends group initiative - #stayhomestaysafe <br>share a positive vibe wid loved ones in lockdown </a>
+
 
 </div>
-  <div class="qb">
-      <img src="./assets/load.gif" alt="" height="400px" width="350px" id="human">
-    <p id="quoter">A vibe is loading</p>
 
-    </div>
-<div class="buttons">
-  <button type="button"class="button" name="button" onclick="randomQuote()">reload</button>
-<button type="button" name="button" class="button"><a href="whatsapp://send" data-text="feel good we are with you" data-href="https://overrkill.github.io" class="wa_btn wa_btn_s " >Share</a>
-</button>
-</div>
-<div class="footer">
-  created by &copy; Abhishek kale
-</div>
-</div>
 
-<script src="App.js" charset="utf-8"></script>
-
+  <script src="App.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.9/angular.min.js" charset="utf-8"></script>
   <script type="text/javascript">if(typeof wabtn4fg==="undefined"){wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="./whatsapp-button.js";h.appendChild(s);}</script>
   </body>
