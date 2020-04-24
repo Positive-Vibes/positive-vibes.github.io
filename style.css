@@ -12,7 +12,6 @@
   display: flex;
   align-items:center;
   justify-content:space-between;
-  height: 10vh;
   background: #FED766;
 
 }
@@ -25,7 +24,7 @@ font-size: 2rem;
 .quoteparent{
   display: flex;
     height: 69vh;
-    width: device-width;
+    width: device-width-1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -51,9 +50,8 @@ font-size: 2rem;
   font-family: 'Merriweather',serif;
   line-height: 140%;
     min-height:100px;
-    width: 400px;
-    border: 2px solid black;
-    border-radius: 4px;
+    max-width:90vw;
+
     padding: 15px;
 }
 #who{
@@ -67,6 +65,7 @@ font-size: 2rem;
 .footer{
   display: flex;
   height: 10vh;
+  font-size: 0.8rem;
   justify-content: space-between;
   align-items: flex-end;
   background: #272727;
@@ -78,7 +77,6 @@ font-size: 2rem;
   width: 100px;
   border: 2px solid #56E39F;
   background: white;
-  font-family: 'Bebas Neue',cursive;
 
 }
 .button:hover{
@@ -88,15 +86,17 @@ font-size: 2rem;
 }
 .whatsapp{
   display: none;
-  color: #1DC143;
-}
 
-.whatsapp:hover, .whatsapp:focus{
-  background: #1DC143;
-  color: #fff;
-  text-shadow: 0 0 1px rgba(0,0,0,0.2);
 }
 
 .whatsapp.activeWhatsapp{
-  display: inline-block;
+  display:inline-block;
+}
+@media only screen and (max-width:600px) {
+  .title{
+    flex-direction: column;
+  }
+  .subt{
+    display: none;
+  }
 }

@@ -1,6 +1,7 @@
 const quote=document.getElementById('quoter');
 const said=document.getElementById('who');
 const hooman=document.getElementById('human');
+const share=document.getElementsByClassName('wb');
 
 async function randomQuote() {
   hooman.src="./assets/load1.gif";
@@ -14,6 +15,7 @@ async function randomQuote() {
   quote.innerText=data.content;
   console.log(said);
   said.innerText=data.author;
+  share[0].setAttribute("data-text",data.content+"-"+data.author);
 
 }
 
