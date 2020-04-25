@@ -26,7 +26,7 @@ async function randomQuote() {
   const data = await response.json();
   console.log(data.content,data.author);
   if (data){hooman.style="display:none";}
-  quote.innerText=data.content;
+  quote.innerText='"'+data.content+'"';
   console.log(said);
   said.innerText=data.author;
   share[0].setAttribute("data-text",data.content+"-"+data.author);
