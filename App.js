@@ -3,6 +3,20 @@ const said=document.getElementById('who');
 const hooman=document.getElementById('human');
 const share=document.getElementsByClassName('wb');
 
+function copii() {
+  var el = document.createElement('textarea');
+    el.value ="Vibe\n"+quoter.innerText+"-"+said.innerText;
+    el.text ="Vibe\n"+quoter.innerText+"-"+said.innerText;
+    el.setAttribute('id', 'copyText');
+    el.setAttribute('readonly', '');
+    el.display="none";
+    document.body.appendChild(el);
+    var coptTextArea = document.getElementById('copyText');
+    coptTextArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+
+}
 async function randomQuote() {
   hooman.src="./assets/load1.gif";
   quote.innerText="a vibe is loading...";

@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
 *{
   font-family: 'Poppins',sans-serif;
-
+  margin: 0;
 }
 .main{
-  height: device-height;
-  width: device-width;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows:max-content;
 }
 
 .title{
@@ -13,6 +16,8 @@
   align-items:center;
   justify-content:space-between;
   background: #FED766;
+  max-height: 15vh;
+  padding: 4px;
 
 }
 .title h1{
@@ -22,40 +27,30 @@ font-size: 2rem;
   font-size: 0.8rem;
 }
 .quoteparent{
-  display: flex;
-    height: 69vh;
-    width: device-width-1;
+    height:80vh;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #EFF1F3;
+    align-items: stretch;
+    justify-content: space-evenly;
+    background: #f5f5f5;
 }
 .qb{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+padding: 4px;
 
-      height: 60vh;
-      width: 90vw;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
 }
-#human{
 
-    height: 200px;
-    width: 200px;
-}
 #quoter{
-
-  background:white;
-  font-family: 'Merriweather',serif;
+  font-size: 110%;
   line-height: 140%;
-    min-height:100px;
-    max-width:90vw;
+  max-width: 450px;
 
-    padding: 15px;
 }
 #who{
-  z-index: 10;
+
 }
 .buttons{
   display: flex;
@@ -64,7 +59,7 @@ font-size: 2rem;
 }
 .footer{
   display: flex;
-  height: 10vh;
+  min-height: 10vh;
   font-size: 0.8rem;
   justify-content: space-between;
   align-items: flex-end;
@@ -75,23 +70,16 @@ font-size: 2rem;
   border-radius: 6px;
   height: 40px;
   width: 100px;
-  border: 2px solid #56E39F;
+  border: 2px solid #FED766;
   background: white;
 
 }
 .button:hover{
   border-radius: 6px;
-  border: 2px solid white;
-  background: #56E39F;
-}
-.whatsapp{
-  display: none;
-
+  border: 2px solid #FED766;
+  background: #FED766;
 }
 
-.whatsapp.activeWhatsapp{
-  display:inline-block;
-}
 @media only screen and (max-width:600px) {
   .title{
     flex-direction: column;
