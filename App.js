@@ -2,7 +2,28 @@ const quote=document.getElementById('quoter');
 const said=document.getElementById('who');
 const hooman=document.getElementById('human');
 const share=document.getElementsByClassName('wb');
+const cnt=document.getElementById('count')
+var firebaseConfig = {
+    apiKey: "AIzaSyAJUxXIt2u3OLNps0e-HiF5SyypHical7o",
+    authDomain: "positive-vibes-10ea4.firebaseapp.com",
+    databaseURL: "https://positive-vibes-10ea4.firebaseio.com",
+    projectId: "positive-vibes-10ea4",
+    storageBucket: "positive-vibes-10ea4.appspot.com",
+    messagingSenderId: "853283821100",
+    appId: "1:853283821100:web:91884a103078e648ffa389",
+    measurementId: "G-BKWTJFJG7R"
+  };
+firebase.initializeApp(firebaseConfig);
+var db = firebase.firestore();
+const countref=db.collection('vibecounts').doc('main');
+var intialcount=0;
+const view =()=>{
+  countref.get()
+  .then((doc)=>{intialcount=doc.data().totalcount+1;countref.set({totalcount:intialcount});})
+  .then(()=>{cnt.innerText=intialcount;});
 
+}
+view()
 function copii() {
   var el = document.createElement('textarea');
     el.value ="Vibe\n"+quoter.innerText+"-"+said.innerText;

@@ -64,12 +64,13 @@ font-family: 'Gentium Basic',serif;
 }
 .footer{
   display: flex;
-  min-height: 10vh;
+  max-height: 5vh;
   font-size: 0.8rem;
   justify-content: space-between;
   align-items: flex-end;
   background: #272727;
   color: white;
+  padding: 8px;
 }
 .button{
   border-radius: 6px;
